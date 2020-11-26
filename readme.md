@@ -1,6 +1,6 @@
 # UI PhD Study Plan Template
 
-This is a study plan template for the School of Engineering and Natural Sciences at the University of Iceland.
+This is a study plan template for the [School of Engineering and Natural Sciences at the University of Iceland](https://english.hi.is/school_of_engineering_and_natural_sciences).
 
 ## Instructions
 
