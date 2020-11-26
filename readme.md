@@ -5,8 +5,10 @@ This is a study plan template for the School of Engineering and Natural Sciences
 ## Instructions
 
 - Largely self-explanatory
+  - Change names and add things
 - Keep track of the bibliography and the names
 - Needs the Calibri font
+  - This involves, say, on ArchLinux, the `ttf-windows` AUR package
 - Also needs the logo, _do not_ delete `logo`
 
 ## Compilation
@@ -19,8 +21,10 @@ latexmk -pdfxe -shell-escape -8bit -pvc studyPlanSENS.tex
 
 ## Overleaf
 
-This repo is also submitted to Overleaf for use as a template.
+This repository has also submitted to Overleaf for use as a template.
 
 ## License
 
-The logo is reserved for use by the University of Iceland. The rest of the content is junk. The template itself is MIT licensed.
+- The logo (in the header) is reserved for use by the University of Iceland
+- The rest of the content is junk
+- The template itself (code) is MIT licensed
