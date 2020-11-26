@@ -1,0 +1,139 @@
+\documentclass[a4paper,english]{article}
+
+\usepackage{graphicx}
+
+\usepackage{babel}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%%%%%
+% Bibiliography %
+%%%%%%%%%%%%%%%%%
+
+\usepackage{biblatex}
+
+% get rid of the number-labels ([1], [2], etc.) in front of publications
+\defbibenvironment{midbib}
+{\list
+	{}
+	{
+		\setlength{\leftmargin}{0mm}
+		\setlength{\itemindent}{-\leftmargin}
+		\setlength{\itemsep}{\bibitemsep}
+		\setlength{\parsep}{\bibparsep}}
+}
+{\endlist}
+{\item}
+
+%%%%%%%%
+% Temp %
+%%%%%%%%
+% Delete these in production
+\usepackage[pangram]{blindtext}
+\usepackage{lipsum}
+
+%%%%%%%%%%%%%%
+% Mimic Word %
+%%%%%%%%%%%%%%
+
+% Set header rules
+\renewcommand{\headrulewidth}{0pt}
+\usepackage[headheight=75pt]{geometry}
+\setlength\headsep{20pt}
+
+% Use the header
+\chead{\includegraphics[width=\textwidth]{logo/sensCutout.png}} % Use image
+\lhead{} % Clear left
+\rhead{} % Clear right
+% Manipulate fonts
+\usepackage{fontspec}
+\setmainfont{Calibri}
+% Allow centering of sections
+\def\centersec#1{\centering#1} % kanged from https://tex.stackexchange.com/questions/193629/how-to-center-an-unnumbered-section-name
+
+\title{UI SENS PhD Study Plan}
+
+% Change these
+\author{Jane Doe}
+\addbibresource{smplBibtex.bib}
+
+\begin{document}
+
+\section*{\centersec{PhD Study Plan}}
+
+\begin{description}[itemsep=1pt]
+  \item[Name:] Jane Doe
+  \item[Kennitala:] 020593--5291
+  \item[Degree Program:] Chemistry
+  \item[PhD studies start date:] 9\textsuperscript{th} of January 2020
+\item[Doctoral Committee:] \quad (Not) Appointed by the Faculty Council \\
+  \hspace*{75pt} Prof.\ Person1 Lastname1, Designation, University of Iceland (supervisor) \\
+  \hspace*{75pt} Prof.\ Person2 Lastname2, Designation, University of Iceland \\
+  \hspace*{75pt} Dr.\ Person3 Lastname3, Designation, Affiliation \\
+  \item[Funding status:] Lots of money from blah
+  \item[Midway evaluation:] Not completed, tentatively in the Spring of 2021
+  \item[Midway presentation:] Not completed, tentatively in the Spring of 2021
+  \item[Student backgroud:] \hfill \\ \Blindtext[2][3]
+\end{description}
+
+\subsection*{Prior publications}
+\nocite{*}
+\textbf{Articles}
+\printbibliography[type=article, env=midbib, heading=none]
+\noindent\textbf{Books}
+\printbibliography[type=book, env=midbib, heading=none]
+
+\subsection*{Research Project(s)}
+% Repeat if necessary
+\subsubsection*{\centersec{Awesome Project I}}
+\begin{refsection} % New section for references
+\lipsum[1-5]{}
+\nocite{*}
+\printbibliography[heading=subbibliography] % print section bibliography
+\end{refsection}
+
+\subsection*{Time Schedule}
+\subsubsection*{First Year}
+\lipsum[28]{}
+\subsubsection*{Second Year}
+\lipsum[77]{}
+\subsubsection*{Third Year}
+\lipsum[63]{}
+
+\subsubsection*{\centersec{Estimated Defense Date: August 2023}}
+
+\subsection*{Doctoral Dissertation}
+The thesis will consist of a series of peer reviewed papers published in leading journals within the interdisciplinary fields relevant to the projects described. The thesis book shall also include a self-contained introduction and coherent rationale for the project and state of the art techniques to put the work in context. A tentative table-of-contents is as follows:
+
+\begin{itemize}[noitemsep]
+  \item Motivation
+  \item Introduction
+  \item Methods
+  \item Results
+  \item Conclusions and Future Directions
+  \item Summary of Papers
+  \item Full-text of papers
+  \item References
+\end{itemize}
+
+\begin{description}[itemsep=1pt]
+  \item[Prerequisite courses:] Total Credits: 0
+\item[Course Plan:] \quad Total Credits: 32.5 \\
+  \hspace*{75pt} \textit{Autumn 2018} \\
+  \hspace*{75pt} EFN115F Computational Chemistry \\
+  \hspace*{75pt} \textit{Summer 2020} \\
+  \hspace*{75pt} 1023 CAMD Summer School \\
+\end{description}
+
+\noindent All course descriptions are presented in an appendix.
+\newpage
+\noindent In Reykjavik, \today\\[3cm]
+\noindent Student \hspace*{\fill} Advisor \hspace*{\fill} Committee members\\
+\noindent Jane Doe \hspace*{\fill} Person1 Lastname1 \hspace*{\fill} Person2 Lastname2\\
+\hspace*{\fill} Person3 Lastname3\\[1cm]
+\noindent \textbf{Confirmed by:}\\[3cm]
+Faculty Graduate Studies Committee Representative
+\end{document}
