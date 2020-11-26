@@ -50,7 +50,16 @@
 \rhead{} % Clear right
 % Manipulate fonts
 \usepackage{fontspec}
-\setmainfont{Calibri}
+
+\setmainfont[
+	Path = Fonts/Calibri/,
+	Numbers=OldStyle,
+	Extension = .ttf,
+	UprightFont = *_Regular,
+	ItalicFont = *_It,
+	BoldFont = *_Bold,
+]{Calibri}
+
 % Allow centering of sections
 \def\centersec#1{\centering#1} % kanged from https://tex.stackexchange.com/questions/193629/how-to-center-an-unnumbered-section-name
 
