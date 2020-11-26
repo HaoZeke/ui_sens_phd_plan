@@ -7,8 +7,6 @@ This is a study plan template for the [School of Engineering and Natural Science
 - Largely self-explanatory
   - Change names and add things
 - Keep track of the bibliography and the names
-- Needs the Calibri font
-  - This involves, say, on ArchLinux, the `ttf-windows` AUR package
 - Also needs the logo, _do not_ delete `logo`
 
 ## Compilation
@@ -22,6 +20,10 @@ latexmk -pdfxe -shell-escape -8bit -pvc studyPlanSENS.tex
 ## Overleaf
 
 This repository has also been submitted to Overleaf for use as a template.
+
+## Acknowledgements
+
+The Calibri font has been kanged from the sources of ArchLinux's `ttf-windows` [AUR package](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=ttf-windows).
 
 ## License
 
