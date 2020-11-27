@@ -19,7 +19,7 @@ latexmk -pdfxe -shell-escape -8bit -pvc studyPlanSENS.tex
 
 ## Overleaf
 
-This repository has also been submitted to Overleaf for use as a template.
+This repository has also been [submitted to Overleaf for use as a template](https://www.overleaf.com/latex/templates/ui-sens-phd-study-plan/xqnwgtyfjhnt).
 
 ## Acknowledgements
 
